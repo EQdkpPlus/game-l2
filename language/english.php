@@ -17,33 +17,27 @@ $english_array = array(
 		
 	),
 	'races' => array(
-		'Unknown',
-		'Dark Elf',
-		'Dwarf',
-		'Elf',
-		'Human',
-		'Kamael',
-		'Orc',
+		0	=> 'Unknown',
+		1	=> 'Dark Elf',
+		2	=> 'Dwarf',
+		3	=> 'Elf',
+		4	=> 'Human',
+		5	=> 'Kamael',
+		6	=> 'Orc',
 	),
 	
 	'roles' => array(
-		1 => array(2,3),
-		2 => array(4),
-		3 => array(1,2,5,6,7,8),
-		4 => array(2,6),
+		1	=> 'Healer',
+		2	=> 'Tank',
+		3	=> 'Damage Dealer',
+		4	=> 'Supporter',
 	),
 	'lang' => array(
-		'l2' => 'Lineage II',
-		'plate'	=> 'Plate',
-		'heavy' => 'Heavy',
-		'light' => 'Cloth',	
-		'medium' => 'Leather',
-	
-		// Roles
-		'role1' => 'Healer',
-		'role2' => 'Tank',
-		'role3' => 'Damage Dealer',
-		'role4' => 'Supporter',
+		'l2'							=> 'Lineage II',
+		'plate'							=> 'Plate',
+		'heavy'							=> 'Heavy',
+		'light'							=> 'Cloth',	
+		'medium'						=> 'Leather',
 	
 		// Profile information
 		'uc_gender'						=> 'Gender',
