@@ -1,4 +1,19 @@
 <?php
+ /*
+ * Project:		EQdkp-Plus
+ * License:		Creative Commons - Attribution-Noncommercial-Share Alike 3.0 Unported
+ * Link:		http://creativecommons.org/licenses/by-nc-sa/3.0/
+ * -----------------------------------------------------------------------
+ * Date:		$Date$
+ * -----------------------------------------------------------------------
+ * @author		$Author$
+ * @copyright	2006-2014 EQdkp-Plus Developer Team
+ * @link		http://eqdkp-plus.com
+ * @package		eqdkp-plus
+ * @version		$Rev$
+ *
+ * $Id$
+ */
 
 if ( !defined('EQDKP_INC') ){
 	header('HTTP/1.0 404 Not Found');exit;
@@ -6,14 +21,15 @@ if ( !defined('EQDKP_INC') ){
 
 if(!class_exists('l2')) {
 	class l2 extends game_generic {
-		public $version			= '0.1';
-		protected $this_game	= 'l2';
-		protected $types		= array('classes', 'races', 'roles', 'filters');
-		protected $classes		= array();
-		protected $races		= array();
-		protected $factions		= array();
-		protected $filters		= array();
-		public $langs			= array('english');
+		protected static $apiLevel	= 20;
+		public $version				= '0.1';
+		protected $this_game		= 'l2';
+		protected $types			= array('classes', 'races', 'roles', 'filters');
+		protected $classes			= array();
+		protected $races			= array();
+		protected $factions			= array();
+		protected $filters			= array();
+		public $langs				= array('english');
 
 		protected $class_dependencies = array(
 			array(
@@ -96,11 +112,6 @@ if(!class_exists('l2')) {
 			return $xml_fields;
 		}
 
-		/**
-		* Initialises filters
-		*
-		* @param array $langs
-		*/
 		protected function load_filters($langs){
 			if(!$this->classes) {
 				$this->load_type('classes', $langs);
@@ -114,20 +125,7 @@ if(!class_exists('l2')) {
 			}
 		}
 
-		/**
-		* Returns Information to change the game
-		*
-		* @param bool $install
-		* @return array
-		*/
-		public function install($install=false){
-			
-
-			//Do this SQL Query NOT if the Eqdkp is installed -> only @ the first install
-			#if($install){
-			#}
-			return $info;
-		}
+		public function install($install=false){}
 	}
 }
 ?>
