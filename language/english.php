@@ -7,7 +7,7 @@ $english_array = array(
 	'classes' => array(
 		0	=> 'Unknown',
 		1	=> 'Archer',
-        2	=> 'Enchanter',
+		2	=> 'Enchanter',
 		3	=> 'Healer',
 		4	=> 'Knight',
 		5	=> 'Rogue',
@@ -45,9 +45,10 @@ $english_array = array(
 		'uc_female'						=> 'Female',
 		'uc_guild'						=> 'Guild',
 		'uc_class_path'					=> 'Class Path',
+		'uc_race'						=> 'Race',
+		'uc_class'						=> 'Class',
 		
 		// Class Path
-		
 		'uc_path_1' => 'Fighter',
 		'uc_path_2' => 'Soldier',
 		'uc_path_3' => 'Mystic',
