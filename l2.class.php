@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('l2')) {
 	class l2 extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version				= '0.1';
+		public $version				= '1.0.0';
 		protected $this_game		= 'l2';
 		protected $types			= array('classes', 'races', 'roles', 'filters');
 		protected $classes			= array();
