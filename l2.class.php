@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('l2')) {
 	class l2 extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version				= '1.0.0';
+		public $version				= '1.1.0';
 		protected $this_game		= 'l2';
 		protected $types			= array('classes', 'races', 'roles', 'filters');
 		protected $classes			= array();
@@ -65,14 +65,14 @@ if(!class_exists('l2')) {
 				),
 			),
 		);
-		
+
 		public $default_roles = array(
 			1	=> array(2,3),
 			2	=> array(4),
 			3	=> array(1,2,5,6,7,8),
 			4	=> array(2,6),
 		);
-		
+
 		protected $class_colors = array(
 			1	=> '#B5B171',
 			2	=> '#608269',
@@ -112,6 +112,14 @@ if(!class_exists('l2')) {
 					'category'		=> 'character',
 					'lang'			=> 'uc_guild',
 					'size'			=> 32,
+					'undeletable'	=> true,
+				),
+				'level'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'character',
+					'lang'			=> 'uc_level',
+					'max'			=> 199,
+					'min'			=> 1,
 					'undeletable'	=> true,
 				),
 			);

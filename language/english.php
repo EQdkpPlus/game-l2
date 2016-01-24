@@ -33,7 +33,7 @@ $english_array = array(
 		6	=> 'Summoner',
 		7	=> 'Warrior',
 		8	=> 'Wizard',
-		
+
 	),
 	'races' => array(
 		0	=> 'Unknown',
@@ -44,7 +44,7 @@ $english_array = array(
 		5	=> 'Kamael',
 		6	=> 'Orc',
 	),
-	
+
 	'roles' => array(
 		1	=> 'Healer',
 		2	=> 'Tank',
@@ -55,9 +55,9 @@ $english_array = array(
 		'l2'							=> 'Lineage II',
 		'plate'							=> 'Plate',
 		'heavy'							=> 'Heavy',
-		'light'							=> 'Cloth',	
+		'light'							=> 'Cloth',
 		'medium'						=> 'Leather',
-	
+
 		// Profile information
 		'uc_gender'						=> 'Gender',
 		'uc_male'						=> 'Male',
@@ -66,7 +66,8 @@ $english_array = array(
 		'uc_class_path'					=> 'Class Path',
 		'uc_race'						=> 'Race',
 		'uc_class'						=> 'Class',
-		
+		'uc_level'						=> 'Level',
+
 		// Class Path
 		'uc_path_1' => 'Fighter',
 		'uc_path_2' => 'Soldier',
